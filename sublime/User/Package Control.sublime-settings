@@ -1,0 +1,75 @@
+{
+	"bootstrapped": true,
+	"certs":
+	{
+		"api.bitbucket.org":
+		[
+			"7d0986b90061d60c8c02aa3b1cf23850",
+			"https://sublime.wbond.net/certs/7d0986b90061d60c8c02aa3b1cf23850"
+		],
+		"api.github.com":
+		[
+			"7d0986b90061d60c8c02aa3b1cf23850",
+			"https://sublime.wbond.net/certs/7d0986b90061d60c8c02aa3b1cf23850"
+		],
+		"bitbucket.org":
+		[
+			"7d0986b90061d60c8c02aa3b1cf23850",
+			"https://sublime.wbond.net/certs/7d0986b90061d60c8c02aa3b1cf23850"
+		],
+		"codeload.github.com":
+		[
+			"7d0986b90061d60c8c02aa3b1cf23850",
+			"https://sublime.wbond.net/certs/7d0986b90061d60c8c02aa3b1cf23850"
+		],
+		"downloads.sourceforge.net":
+		[
+			"221e907bdfff70d71cea42361ae209d5",
+			"https://sublime.wbond.net/certs/221e907bdfff70d71cea42361ae209d5"
+		],
+		"github.com":
+		[
+			"7d0986b90061d60c8c02aa3b1cf23850",
+			"https://sublime.wbond.net/certs/7d0986b90061d60c8c02aa3b1cf23850"
+		],
+		"nodeload.github.com":
+		[
+			"7d0986b90061d60c8c02aa3b1cf23850",
+			"https://sublime.wbond.net/certs/7d0986b90061d60c8c02aa3b1cf23850"
+		],
+		"raw.github.com":
+		[
+			"7d0986b90061d60c8c02aa3b1cf23850",
+			"https://sublime.wbond.net/certs/7d0986b90061d60c8c02aa3b1cf23850"
+		],
+		"sublime.wbond.net":
+		[
+			"221e907bdfff70d71cea42361ae209d5",
+			"/Users/tschundler/Library/Application Support/Sublime Text 3/Packages/User/Package Control.ca-certs/sublime.wbond.net-ca.crt"
+		]
+	},
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"BetterFindBuffer",
+		"BracketHighlighter",
+		"Emmet",
+		"Git",
+		"GitGutter",
+		"HighlightWords",
+		"InactivePanes",
+		"JsFormat",
+		"LineEndings",
+		"Origami",
+		"Package Control",
+		"Pretty JSON",
+		"Python Flake8 Lint",
+		"SideBarEnhancements",
+		"SublimePythonIDE",
+		"Theme - Soda",
+		"TidyTabs",
+		"TrailingSpaces"
+	]
+}

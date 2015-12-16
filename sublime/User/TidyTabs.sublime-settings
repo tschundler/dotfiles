@@ -1,0 +1,5 @@
+{
+	"tidytabs_run_on_post_save": true,
+    "tidytabs_modified_duration": 300,
+    "tidytabs_threshold": 25
+}

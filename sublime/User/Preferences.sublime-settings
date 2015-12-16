@@ -1,0 +1,51 @@
+{
+	"bold_folder_labels": true,
+	"color_scheme": "Packages/User/Dawn (Ted).tmTheme",
+	"file_exclude_patterns":
+	[
+		"*.pyc",
+		"*.pyo",
+		"*.exe",
+		"*.dll",
+		"*.obj",
+		"*.o",
+		"*.a",
+		"*.lib",
+		"*.so",
+		"*.dylib",
+		"*.ncb",
+		"*.sdf",
+		"*.suo",
+		"*.pdb",
+		"*.idb",
+		".DS_Store",
+		"*.class",
+		"*.psd",
+		"*.db",
+		"*.sublime-workspace",
+		"*~"
+	],
+	"find_selected_text": true,
+	"folder_exclude_patterns":
+	[
+		"tcdc-main/static/gen",
+		"tcdc-main/build",
+		"ucr/build"
+	],
+	"font_size": 8,
+	"highlight_line": true,
+	"ignored_packages":
+	[
+		"SideBarEnhancements",
+		"Vintage"
+	],
+	"inactive_panes_dim_strength": 0.04,
+	"overlay_scroll_bars": "enabled",
+	"rulers":
+	[
+		80,
+		120
+	],
+	"translate_tabs_to_spaces": true,
+	"word_wrap": true
+}

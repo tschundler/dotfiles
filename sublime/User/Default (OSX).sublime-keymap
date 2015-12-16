@@ -1,0 +1,25 @@
+[
+    // Mac keyboard default behavior is dumb
+    {
+        "keys": ["home"],
+        "command": "move_to",
+        "args": {
+            "to": "bol"
+        }
+    }, {
+        "keys": ["end"],
+        "command": "move_to",
+        "args": {
+            "to": "eol"
+        }
+    },
+    // make tab work anywhere in the line
+    {
+        "keys": ["tab"],
+        "command": "indent"
+    }, {
+        "keys": ["shift+tab"],
+        "command": "unindent"
+    },
+
+]

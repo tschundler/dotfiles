@@ -1,0 +1,30 @@
+.DS_Store
+
+*.pyc
+*~
+
+*tmp
+*bak
+
+#
+# hidden Editor Files
+#
+# Eclipse / pydev
+.project
+.pydevproject
+.settings
+# komodo settings
+*.komodoproject
+# pycharm
+.idea
+atlassian-ide-plugin.xml
+# Sublime Text
+*.sublime*
+# SublimeCodeIntel
+.codeintel
+#Kate
+*.kate-swp
+
+# rope
+.ropeproject
+

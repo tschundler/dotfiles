@@ -25,5 +25,11 @@ link_recurse() {
 # home dotfiles
 link_recurse $(find $BASEDIR -name ".*" -and -not -name ".git*" -and -not -name ".DS_Store" -depth 1) $HOME
 
-SUBLIME_DEST="${HOME}/Library/Application Support/Sublime Text 3/Packages"
+if [ -d ${HOME}/.config/sublime-text-3/Packages/User ]; then
+    # UN*X
+    SUBLIME_DEST="${HOME}/.config/sublime-text-3/Packages"
+else
+    # OSX
+    SUBLIME_DEST="${HOME}/Library/Application Support/Sublime Text 3/Packages"
+fi
 link_recurse "$BASEDIR/sublime/User" "$SUBLIME_DEST"

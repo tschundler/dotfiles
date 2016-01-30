@@ -1,0 +1,7 @@
+{
+    "debug"           :  false,
+    "autocomplete": false,
+    "command"   :  "~/bin/ctags_for_ruby",
+
+    "extra_tag_files" : [".gemtags", ".tags"]
+}

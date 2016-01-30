@@ -34,3 +34,6 @@ else
     SUBLIME_DEST="${HOME}/Library/Application Support/Sublime Text 3/Packages"
 fi
 link_recurse "$BASEDIR/sublime/User" "$SUBLIME_DEST"
+
+# utility scripts
+link_recurse "$BASEDIR/bin" "${HOME}"

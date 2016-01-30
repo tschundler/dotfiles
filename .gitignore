@@ -19,7 +19,7 @@
 .idea
 atlassian-ide-plugin.xml
 # Sublime Text
-*.sublime*
+.sublime*
 # SublimeCodeIntel
 .codeintel
 #Kate

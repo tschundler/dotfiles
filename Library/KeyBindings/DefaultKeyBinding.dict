@@ -1,0 +1,11 @@
+{
+/* Remap Home / End keys to be correct -- http://mwholt.blogspot.com/2012/09/fix-home-and-end-keys-on-mac-os-x.html */
+"\UF729" = "moveToBeginningOfLine:"; /* Home */
+"\UF72B" = "moveToEndOfLine:"; /* End */
+"$\UF729" = "moveToBeginningOfLineAndModifySelection:"; /* Shift + Home */
+"$\UF72B" = "moveToEndOfLineAndModifySelection:"; /* Shift + End */
+"^\UF729" = "moveToBeginningOfDocument:"; /* Ctrl + Home */
+"^\UF72B" = "moveToEndOfDocument:"; /* Ctrl + End */
+"$^\UF729" = "moveToBeginningOfDocumentAndModifySelection:"; /* Shift + Ctrl + Home */
+"$^\UF72B" = "moveToEndOfDocumentAndModifySelection:"; /* Shift + Ctrl + End */
+}

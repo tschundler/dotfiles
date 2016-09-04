@@ -37,3 +37,8 @@ link_recurse "$BASEDIR/sublime/User" "$SUBLIME_DEST"
 
 # utility scripts
 link_recurse "$BASEDIR/bin" "${HOME}"
+
+#OSX Config
+if [ -d ${HOME}/Library ]; then
+   link_recurse "$BASEDIR/Library" "${HOME}"
+fi

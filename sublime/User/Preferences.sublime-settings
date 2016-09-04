@@ -37,6 +37,7 @@
 	"ignored_packages":
 	[
 		"SideBarEnhancements",
+		"SublimeLinter-rubocop",
 		"Vintage"
 	],
 	"inactive_panes_dim_strength": 0.04,

@@ -148,5 +148,7 @@ kopen() {
     cd "$DIR"
 }
 
+#Sublime
+[ -x /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl ] && ln -sf /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl ~/bin/subl
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting

@@ -1,0 +1,8 @@
+[
+    // middle mouse paste selection ^^
+    {
+        "button": "button3", "modifiers": [],
+        "press_command": "drag_select",
+        "command": "paste"
+    }
+]

@@ -30,7 +30,9 @@
 	[
 		"tcdc-main/static/gen",
 		"tcdc-main/build",
-		"ucr/build"
+		"ucr/build",
+		"node_modules",
+		"venv", "venv3", "bower_components"
 	],
 	"font_size": 8,
 	"highlight_line": true,

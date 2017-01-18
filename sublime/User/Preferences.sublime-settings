@@ -36,7 +36,7 @@
 		"venv3",
 		"bower_components",
 		"asset_build",
-		".coverage",
+		".coverage*",
 		".git"
 	],
 	"font_size": 8,

@@ -1,5 +1,10 @@
 #!/bin/bash
 
+##### Start!
+
+
+##### Early operations
+
 # homebrew
 if [ $(uname) = Darwin ]; then
     if [ -f $(brew --prefix)/etc/bash_completion ]; then
@@ -23,7 +28,7 @@ HISTCONTROL=ignoreboth
 shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=1000
+HISTSIZE=10000
 HISTFILESIZE=100000
 
 # check the window size after each command and, if necessary,
@@ -151,4 +156,11 @@ kopen() {
 #Sublime
 [ -x /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl ] && ln -sf /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl ~/bin/subl
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+if [ -x $HOME/.rvm/bin ]; then
+    export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+fi
+
+#### End Content
+
+#### EOF
+

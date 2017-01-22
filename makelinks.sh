@@ -24,7 +24,7 @@ link_recurse() {
 }
 
 # home dotfiles
-link_recurse $(find $BASEDIR -maxdepth 1 -name ".*" -and -not -name ".git*" -and -not -name ".DS_Store" -and -not -name ".") $HOME
+link_recurse $(find $BASEDIR -maxdepth 1 -name ".gitconfig" -or -name ".*" -and -not -name ".git*" -and -not -name ".DS_Store" -and -not -name ".") $HOME
 
 if [ -d ${HOME}/.config/sublime-text-3/Packages/User ]; then
     # UN*X

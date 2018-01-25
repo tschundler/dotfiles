@@ -50,6 +50,7 @@ endif
 let python_highlight_all = 1
 set showmatch
 
+let g:airline_theme='base16'
 
 " Set the working directory to wherever the open file lives
 set autochdir

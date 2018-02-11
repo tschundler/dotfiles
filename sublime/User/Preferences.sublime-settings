@@ -36,14 +36,13 @@
 		"venv3",
 		"bower_components",
 		"asset_build",
-		".coverage",
+		".coverage*",
 		".git"
 	],
 	"font_size": 8,
 	"highlight_line": true,
 	"ignored_packages":
 	[
-		"SideBarEnhancements",
 		"SublimeLinter-rubocop",
 		"Vintage"
 	],

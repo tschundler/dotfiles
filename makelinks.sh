@@ -24,7 +24,7 @@ link_recurse() {
 }
 
 # home dotfiles
-link_recurse $(find $BASEDIR -maxdepth 1 -name ".*" -and -not -name ".git*" -and -not -name ".DS_Store" -and -not -name ".") $HOME
+link_recurse $(find $BASEDIR -maxdepth 1 -name ".gitconfig" -or -name ".*" -and -not -name ".git*" -and -not -name ".DS_Store" -and -not -name "." -and -not -name ".vim") $HOME
 
 if [ -d ${HOME}/.config/sublime-text-3/Packages/User ]; then
     # UN*X
@@ -37,6 +37,11 @@ link_recurse "$BASEDIR/sublime/User" "$SUBLIME_DEST"
 
 # utility scripts
 link_recurse "$BASEDIR/bin" "${HOME}"
+
+# vim
+mkdir -p "${HOME}/.vim"
+link_recurse ${BASEDIR}/.vim/autoload "${HOME}/.vim"
+ln -sf ${BASEDIR}/.vim/bundle "${HOME}/.vim/"
 
 #OSX Config
 if [ -d ${HOME}/Library ]; then

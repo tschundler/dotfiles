@@ -1,0 +1,10 @@
+[user]
+	email = tschundler@gmail.com
+	name = Ted Schundler
+[push]
+	default = simple
+[alias]
+	grog = log --graph --abbrev-commit --decorate --all --format=format:\"%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(dim black) - %an%C(reset) %C(bold green)(%ar)%C(reset)%C(bold green)%d%C(reset)%n %C(reset)%s%C(reset)\"
+	st = status --short --branch
+	please = push --force-with-lease
+	tree = log --all --graph --decorate --oneline --simplify-by-decoration

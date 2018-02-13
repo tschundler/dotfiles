@@ -51,6 +51,7 @@ let python_highlight_all = 1
 set showmatch
 
 let g:airline_theme='papercolor'
+let g:airline_powerline_fonts = 1
 
 " Set the working directory to wherever the open file lives
 set autochdir

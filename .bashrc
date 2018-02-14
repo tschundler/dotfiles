@@ -46,7 +46,8 @@ fi
 
 # set a fancy prompt (non-color, unless we know we "want" color)
 case "$TERM" in
-    xterm-color) color_prompt=yes;;
+    xterm-*color*) color_prompt=yes;;
+    screen-*color*) color_prompt=yes;;
 esac
 
 # uncomment for a colored prompt, if the terminal has the capability; turned
@@ -124,6 +125,10 @@ fi
 
 
 ################# Ted's stuff
+
+#if [ -x /usr/share/powerline ]; then
+#  echo -n
+#fi
 
 alias terminal-notifier=/Applications/Utilities/terminal-notifier.app/Contents/MacOS/terminal-notifier
 

@@ -12,6 +12,9 @@ nnoremap <C-H> <C-W><C-H>
 set splitbelow
 set splitright
 
+" Yank to clipboard over ssh with \y
+map <Leader>y <Plug>(operator-poweryank-osc52)
+
 " Enable folding
 "set foldmethod=indent
 set foldlevel=99
@@ -52,6 +55,7 @@ set showmatch
 
 let g:airline_theme='papercolor'
 let g:airline_powerline_fonts = 1
+set ttimeoutlen=10
 
 " Set the working directory to wherever the open file lives
 set autochdir

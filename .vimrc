@@ -69,6 +69,15 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 " Mouse
 set mouse=a
 
+" Context aware line-lumbers from https://jeffkreeftmeijer.com/vim-number/
+:set number relativenumber
+
+:augroup numbertoggle
+:  autocmd!
+:  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+:  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
+:augroup END
+
 " Common Settings Above Here
 
 " End Stuff

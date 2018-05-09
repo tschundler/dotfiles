@@ -126,9 +126,9 @@ fi
 
 ################# Ted's stuff
 
-#if [ -x /usr/share/powerline ]; then
-#  echo -n
-#fi
+if [ -x /usr/share/powerline ]; then
+  alias powerline="source /usr/share/powerline/bindings/bash/powerline.sh"
+fi
 
 alias terminal-notifier=/Applications/Utilities/terminal-notifier.app/Contents/MacOS/terminal-notifier
 

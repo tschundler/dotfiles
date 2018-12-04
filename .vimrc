@@ -1,4 +1,4 @@
-"execute pathogen#infect()
+execute pathogen#infect()
 set number
 
 set encoding=utf-8

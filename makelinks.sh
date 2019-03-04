@@ -35,7 +35,7 @@ else
 fi
 link_recurse "$BASEDIR/sublime/User" "$SUBLIME_DEST"
 
-if [ -d ${HOME}/.code/Code/User ]; then
+if [ -d ${HOME}/.config/Code/User ]; then
     # UN*X
     CODE_DEST="${HOME}/.config/Code"
 else

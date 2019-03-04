@@ -1,0 +1,38 @@
+{
+    "editor.fontFamily": "Hack, Menlo, monospace",
+    "editor.fontSize": 8,
+    "editor.rulers": [80,120],
+    "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "boundary",
+    "editor.wordWrap": "on",
+    "editor.wrappingIndent": "deepIndent",
+    "diffEditor.renderSideBySide": false,
+    "files.autoSave": "onWindowChange",
+    "files.trimTrailingWhitespace": true,
+    "files.useExperimentalFileWatcher": true,
+    "workbench.colorTheme": "Default Light+",
+    "workbench.editor.showTabs": false,
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "[go]": {
+        "editor.insertSpaces": false,
+        "editor.detectIndentation": false,
+        "editor.tabSize": 4,
+    },
+    "[python]": {
+        "editor.insertSpaces": true,
+        "editor.detectIndentation": false,
+        "editor.tabSize": 4,
+    },
+    "[typescript]": {
+        "editor.formatOnSave": true,
+        "editor.tabSize": 2,
+    },
+    "[javascript]": {
+        "editor.formatOnSave": true,
+        "editor.tabSize": 2,
+    },
+    "[html]": {
+        "editor.tabSize": 2,
+    },
+}

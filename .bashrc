@@ -165,6 +165,11 @@ if [ -x $HOME/.rvm/bin ]; then
     export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 fi
 
+#PlatformIO
+if [ -x $HOME/.platformio/penv/bin ]; then
+	export PATH="${PATH}:${HOME}/.platformio/penv/bin"
+fi
+
 #### End Content
 
 #### EOF

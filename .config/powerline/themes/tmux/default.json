@@ -3,7 +3,11 @@
 		"right": [
 			{
 				"function": "powerline.segments.common.sys.uptime",
-				"priority": 50
+				"priority": 20
+			},
+			{
+				"function": "powerlinemem.mem_usage.mem_usage",
+				"args": {"short": true}
 			},
 			{
 				"function": "powerline.segments.common.sys.system_load",

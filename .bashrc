@@ -126,6 +126,10 @@ fi
 
 ################# Ted's stuff
 
+if [ -x /snap/bin ]; then
+  export PATH=/snap/bin:${PATH}
+fi
+
 if [ -x /usr/share/powerline ]; then
   alias powerline="source /usr/share/powerline/bindings/bash/powerline.sh"
 fi

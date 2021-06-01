@@ -49,4 +49,10 @@
         "editor.defaultFormatter": "xaver.clang-format"
     },
     "terminal.integrated.shell.osx": "/bin/bash",
+    "workbench.editorAssociations": [
+        {
+            "viewType": "jupyter.notebook.ipynb",
+            "filenamePattern": "*.ipynb"
+        }
+    ],
 }

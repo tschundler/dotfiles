@@ -55,4 +55,7 @@
             "filenamePattern": "*.ipynb"
         }
     ],
+    "settingsSync.ignoredExtensions": [
+
+    ],
 }

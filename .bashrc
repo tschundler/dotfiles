@@ -7,9 +7,14 @@
 
 # homebrew
 if [ $(uname) = Darwin ]; then
+  if [ -d $HOME/homebrew ]; then
+    export PATH=$HOME/homebrew/bin:$PATH
+    export LD_LIBRARY_PATH=$HOME/homebrew/lib:$LD_LIBRARY_PATH
+
     if [ -f $(brew --prefix)/etc/bash_completion ]; then
         . $(brew --prefix)/etc/bash_completion
     fi
+  fi
 fi
 
 ######################## Ubuntu defaults

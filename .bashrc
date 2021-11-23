@@ -128,6 +128,10 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# rustup
+if [ -f "$HOME/.cargo/env"]; then
+  . "$HOME/.cargo/env"
+fi
 
 ################# Ted's stuff
 
@@ -166,6 +170,12 @@ kopen() {
     done
     cd "$DIR"
 }
+
+#PIP
+
+if [ -x $HOME/.local/bin ]; then
+    export PATH="${PATH}:${HOME}/.local/bin"
+fi
 
 #Sublime
 [ -x /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl ] && ln -sf /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl ~/bin/subl

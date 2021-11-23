@@ -37,6 +37,7 @@
     },
     "python.venvPath": "~/.virtualenvs",
     "git.autofetch": true,
+    "arduino.path": "/home/ted/Downloads/arduino-1.8.3",
     "arduino.additionalUrls": [
         "https://adafruit.github.io/arduino-board-index/package_adafruit_index.json",
         "https://raw.githubusercontent.com/sparkfun/Arduino_Boards/master/IDE_Board_Manager/package_sparkfun_index.json",
@@ -49,13 +50,23 @@
         "editor.defaultFormatter": "xaver.clang-format"
     },
     "terminal.integrated.shell.osx": "/bin/bash",
-    "workbench.editorAssociations": [
-        {
-            "viewType": "jupyter.notebook.ipynb",
-            "filenamePattern": "*.ipynb"
-        }
-    ],
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb"
+    },
     "settingsSync.ignoredExtensions": [
 
     ],
+    "window.titleBarStyle": "custom",
+    "cSpell.userWords": [
+        "leds",
+        "platformio"
+    ],
+    "gitlens.gitCommands.skipConfirmations": [
+        "fetch:command",
+        "stash-push:command",
+        "switch:command",
+        "push:command",
+        "push:menu"
+    ],
+    "git.suggestSmartCommit": false,
 }

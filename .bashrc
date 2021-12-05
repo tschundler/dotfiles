@@ -129,7 +129,7 @@ if ! shopt -oq posix; then
 fi
 
 # rustup
-if [ -f "$HOME/.cargo/env"]; then
+if [ -f "$HOME/.cargo/env" ]; then
   . "$HOME/.cargo/env"
 fi
 

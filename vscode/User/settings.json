@@ -12,6 +12,8 @@
     "files.useExperimentalFileWatcher": true,
     "workbench.colorTheme": "Default Light+",
     "workbench.editor.showTabs": false,
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs":"active",
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
     "[go]": {

@@ -56,3 +56,7 @@ ln -sf ${BASEDIR}/.vim/bundle "${HOME}/.vim/"
 if [ -d ${HOME}/Library ]; then
    link_recurse "$BASEDIR/Library" "${HOME}"
 fi
+
+#GDB
+ln -sf "${BASEDIR}/gdb/.gdbinit" "${HOME}"
+

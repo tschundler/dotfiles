@@ -9,9 +9,11 @@
     "diffEditor.renderSideBySide": false,
     "files.autoSave": "onWindowChange",
     "files.trimTrailingWhitespace": true,
-    "files.useExperimentalFileWatcher": true,
     "workbench.colorTheme": "Default Light+",
     "workbench.editor.showTabs": false,
+    "workbench.editor.limit.enabled": true,
+    "workbench.editor.limit.perEditorGroup": true,
+    "workbench.editor.limit.value": 5,
     "editor.bracketPairColorization.enabled": true,
     "editor.guides.bracketPairs":"active",
     "telemetry.enableCrashReporter": false,
@@ -75,4 +77,8 @@
         "default": "right",
         "jupyter-notebook": "left"
     },
+    "remote.SSH.remotePlatform": {
+        "home.epii.info": "linux"
+    },
+    "C_Cpp.autoAddFileAssociations": false,
 }

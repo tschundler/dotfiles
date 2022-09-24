@@ -201,6 +201,10 @@ if [ -x $HOME/.local/bin ]; then
 	export PATH="${PATH}:${HOME}/.local/bin"
 fi
 
+if [ -x /usr/bin/ksshaskpass ]; then
+	export SSH_ASKPASS=/usr/bin/ksshaskpass
+fi
+
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('${HOME}/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"

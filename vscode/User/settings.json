@@ -78,7 +78,9 @@
         "jupyter-notebook": "left"
     },
     "remote.SSH.remotePlatform": {
-        "home.epii.info": "linux"
+        "home.epii.info": "linux",
+        "hackintosh": "macOS",
+        "192.168.1.180": "linux"
     },
     "C_Cpp.autoAddFileAssociations": false,
 }

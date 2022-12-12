@@ -27,3 +27,6 @@
 
 [diff]
     colorMoved = default
+[safe]
+	directory = /storage/software/src/OctoPrint
+

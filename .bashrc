@@ -141,6 +141,12 @@ if [ -x /snap/bin ]; then
   export PATH=/snap/bin:${PATH}
 fi
 
+# bun
+if [ -x "${HOME}/.bun" ]; then
+  export BUN_INSTALL="$HOME/.bun"
+  export PATH=$BUN_INSTALL/bin:$PATH
+fi
+
 if [ -x /usr/share/powerline ]; then
   alias powerline="source /usr/share/powerline/bindings/bash/powerline.sh"
 fi

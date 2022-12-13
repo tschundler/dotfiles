@@ -62,8 +62,10 @@
     ],
     "window.titleBarStyle": "custom",
     "cSpell.userWords": [
+        "itertools",
         "leds",
-        "platformio"
+        "platformio",
+        "timeit"
     ],
     "gitlens.gitCommands.skipConfirmations": [
         "fetch:command",
@@ -83,4 +85,9 @@
         "192.168.1.180": "linux"
     },
     "C_Cpp.autoAddFileAssociations": false,
+    "python.analysis.inlayHints.functionReturnTypes": true,
+    "python.analysis.inlayHints.variableTypes": true,
+    "editor.inlayHints.enabled": "onUnlessPressed",
+    "rust-analyzer.inlayHints.closureReturnTypeHints.enable": "with_block",
+    "rust-analyzer.checkOnSave.command": "clippy",
 }

@@ -1,0 +1,3 @@
+[build]
+rustc-wrapper = "/home/ted/.cargo/bin/sccache"
+

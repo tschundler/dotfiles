@@ -213,18 +213,30 @@ fi
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('${HOME}/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+CHOME=${HOME}/anaconda3
+if [ -x ${HOME}/opt/anaconda3 ]; then
+  CHOME=${HOME}/opt/anaconda3
+fi
+if [ -x ${HOME}/mambaforge ]; then
+  CHOME=${HOME}/mambaforge
+fi
+
+__conda_setup="$('${CHOME}/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "${HOME}/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "${HOME}/anaconda3/etc/profile.d/conda.sh"
+    if [ -f "${CHOME}/etc/profile.d/conda.sh" ]; then
+        . "${CHOME}/etc/profile.d/conda.sh"
     fi
 fi
 
+if [ -f "${CHOME}/etc/profile.d/mamba.sh" ]; then
+    . "${CHOME}/etc/profile.d/mamba.sh"
+fi
+
 # For some reason this isn't usually set...
-if [ -x "${HOME}/anaconda3/bin" ]; then
-    export PATH="$PATH:${HOME}/anaconda3/bin"
+if [ -x "${CHOME}/bin" ]; then
+    export PATH="$PATH:${CHOME}/bin"
 fi
 
 unset __conda_setup

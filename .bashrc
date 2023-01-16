@@ -135,6 +135,11 @@ if [ -f "$HOME/.cargo/env" ]; then
   . "$HOME/.cargo/env"
 fi
 
+# espup
+if [ -f "$HOME/export-esp.sh" ]; then
+  .  "$HOME/export-esp.sh" 
+fi
+
 ################# Ted's stuff
 
 if [ -x /snap/bin ]; then

@@ -65,7 +65,8 @@
         "itertools",
         "leds",
         "platformio",
-        "timeit"
+        "timeit",
+        "xtensa"
     ],
     "gitlens.gitCommands.skipConfirmations": [
         "fetch:command",

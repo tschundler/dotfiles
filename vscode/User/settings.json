@@ -83,7 +83,8 @@
     "remote.SSH.remotePlatform": {
         "home.epii.info": "linux",
         "hackintosh": "macOS",
-        "192.168.1.180": "linux"
+        "192.168.1.180": "linux",
+        "mythbox.local": "linux"
     },
     "C_Cpp.autoAddFileAssociations": false,
     "python.analysis.inlayHints.functionReturnTypes": true,

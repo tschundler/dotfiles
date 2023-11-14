@@ -62,10 +62,17 @@
     ],
     "window.titleBarStyle": "custom",
     "cSpell.userWords": [
+        "ATTINY",
+        "Crablang",
+        "gpio",
         "itertools",
+        "ledc",
         "leds",
+        "Neopixel",
         "platformio",
+        "Pullup",
         "timeit",
+        "tschundler",
         "xtensa"
     ],
     "gitlens.gitCommands.skipConfirmations": [
@@ -100,4 +107,26 @@
     "python.analysis.extraPaths": [
         "lib"
     ],
+    "git.openRepositoryInParentFolders": "never",
+    "files.exclude": {
+        "**/.trunk/*actions/": true,
+        "**/.trunk/*logs/": true,
+        "**/.trunk/*notifications/": true,
+        "**/.trunk/*out/": true,
+        "**/.trunk/*plugins/": true
+    },
+    "trunk.trunkGrayOutNonBlockingIssues": false,
+    "files.watcherExclude": {
+        "**/.trunk/*actions/": true,
+        "**/.trunk/*logs/": true,
+        "**/.trunk/*notifications/": true,
+        "**/.trunk/*out/": true,
+        "**/.trunk/*plugins/": true
+    },
+    "trunk.showPreexistingIssues": false,
+    "git.confirmSync": false,
+    "window.zoomLevel": -1,
+    "prettier.endOfLine": "auto",
+    "prettier.proseWrap": "always",
+    "rust-analyzer.check.command": "clippy",
 }

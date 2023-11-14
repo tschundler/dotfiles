@@ -10,14 +10,13 @@
     "files.autoSave": "onWindowChange",
     "files.trimTrailingWhitespace": true,
     "workbench.colorTheme": "Default Light+",
-    "workbench.editor.showTabs": false,
+    "workbench.editor.showTabs": "single",
     "workbench.editor.limit.enabled": true,
     "workbench.editor.limit.perEditorGroup": true,
     "workbench.editor.limit.value": 5,
     "editor.bracketPairColorization.enabled": true,
     "editor.guides.bracketPairs":"active",
-    "telemetry.enableCrashReporter": false,
-    "telemetry.enableTelemetry": false,
+    "telemetry.telemetryLevel": "off",
     "[go]": {
         "editor.insertSpaces": false,
         "editor.detectIndentation": false,
@@ -39,6 +38,13 @@
     "[html]": {
         "editor.tabSize": 2,
     },
+    "[rust]": {
+        "editor.formatOnSave": true,
+        "files.insertFinalNewline": true,
+    },
+    "[cpp]": {
+        "editor.defaultFormatter": "xaver.clang-format"
+    },
     "python.venvPath": "~/.virtualenvs",
     "git.autofetch": true,
     "arduino.path": "/home/ted/Downloads/arduino-1.8.3",
@@ -50,9 +56,6 @@
     ],
     "C_Cpp.clang_format_fallbackStyle": "Google",
     "platformio-ide.disablePIOHomeStartup": true,
-    "[cpp]": {
-        "editor.defaultFormatter": "xaver.clang-format"
-    },
     "terminal.integrated.shell.osx": "/bin/bash",
     "workbench.editorAssociations": {
         "*.ipynb": "jupyter-notebook"
@@ -128,5 +131,11 @@
     "window.zoomLevel": -1,
     "prettier.endOfLine": "auto",
     "prettier.proseWrap": "always",
+    "errorLens.enabled": true,
+    "errorLens.enabledDiagnosticLevels": [
+        "error",
+        "warning",
+        "info"
+    ],
     "rust-analyzer.check.command": "clippy",
 }

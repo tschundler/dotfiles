@@ -247,11 +247,6 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-#### End Content
-
-#### EOF
-
-
 # pnpm
 export PNPM_HOME="/home/ted/.local/share/pnpm"
 case ":$PATH:" in
@@ -259,3 +254,8 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+#### End Content
+
+#### EOF
+

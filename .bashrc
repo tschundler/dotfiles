@@ -152,6 +152,12 @@ if [ -x "${HOME}/.bun" ]; then
   export PATH=$BUN_INSTALL/bin:$PATH
 fi
 
+# go
+if [ -x "${HOME}/go/bin" ]; then
+  export GOPATH="${HOME}/go"
+  export PATH="${PATH}:${HOME}/go/bin"
+fi
+
 if [ -x /usr/share/powerline ]; then
   alias powerline="source /usr/share/powerline/bindings/bash/powerline.sh"
 fi

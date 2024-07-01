@@ -220,6 +220,13 @@ fi
 
 if [ -x /usr/bin/ksshaskpass ]; then
 	export SSH_ASKPASS=/usr/bin/ksshaskpass
+	if [ -z "${SSH_AUTH_SOCK}" -a -n "${XDG_RUNTIME_DIR}" ]; then
+		export SSH_AUTH_SOCK="${XDG_RUNTIME_DIR}/ssh-agent.socket"
+	fi
+fi
+
+if [ -f ${HOME}/.config/broot/launcher/bash/br ]; then
+	source ${HOME}/.config/broot/launcher/bash/br
 fi
 
 # >>> conda initialize >>>

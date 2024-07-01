@@ -41,6 +41,7 @@
     "[rust]": {
         "editor.formatOnSave": true,
         "files.insertFinalNewline": true,
+        "editor.defaultFormatter": "rust-lang.rust-analyzer",
     },
     "[cpp]": {
         "editor.defaultFormatter": "xaver.clang-format"
@@ -66,18 +67,25 @@
     ],
     "window.titleBarStyle": "custom",
     "cSpell.userWords": [
+        "Adafruit",
         "ATTINY",
+        "consts",
         "Crablang",
+        "egui",
         "espnow",
         "gpio",
         "itertools",
         "ledc",
         "leds",
+        "Magnemite",
         "Neopixel",
         "platformio",
         "Pullup",
+        "Runtimes",
         "timeit",
         "tschundler",
+        "vsync",
+        "wgsl",
         "xtensa"
     ],
     "gitlens.gitCommands.skipConfirmations": [
@@ -139,5 +147,12 @@
         "warning",
         "info"
     ],
+    "errorLens.excludeBySource": [
+        "cSpell"
+    ],
     "rust-analyzer.check.command": "clippy",
+    "workbench.iconTheme": "sweet-vscode-icons",
+    "workbench.preferredDarkColorTheme": "Andromeda",
+    "workbench.preferredLightColorTheme": "Default Light+",
+    "window.autoDetectColorScheme": true,
 }

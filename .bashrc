@@ -229,6 +229,10 @@ if [ -f ${HOME}/.config/broot/launcher/bash/br ]; then
 	source ${HOME}/.config/broot/launcher/bash/br
 fi
 
+if [ ! -z $(which zoxide) ]; then
+  eval "$(zoxide init bash)"
+fi
+
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 CHOME=${HOME}/anaconda3

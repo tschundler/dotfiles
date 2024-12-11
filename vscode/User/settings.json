@@ -1,6 +1,6 @@
 {
     "editor.fontFamily": "Hack, Menlo, monospace",
-    "editor.fontSize": 8,
+    "editor.fontSize": 9,
     "editor.rulers": [80,120],
     "editor.minimap.enabled": false,
     "editor.renderWhitespace": "boundary",
@@ -71,6 +71,7 @@
         "ATTINY",
         "consts",
         "Crablang",
+        "datasheet",
         "egui",
         "espnow",
         "gpio",
@@ -155,4 +156,5 @@
     "workbench.preferredDarkColorTheme": "Andromeda",
     "workbench.preferredLightColorTheme": "Default Light+",
     "window.autoDetectColorScheme": true,
+    "cmake.showOptionsMovedNotification": false,
 }

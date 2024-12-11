@@ -1,0 +1,8 @@
+input type:touch {
+dwt enabled
+tap enabled
+natural_scroll enabled
+middle_emulation enabled
+tool_mode "*" relative
+calibration_matrix 0 1 0 "-1" 0 1
+}

@@ -67,10 +67,14 @@
     ],
     "window.titleBarStyle": "custom",
     "cSpell.userWords": [
-        "Adafruit",
         "ATTINY",
-        "consts",
+        "Adafruit",
         "Crablang",
+        "Magnemite",
+        "Neopixel",
+        "Pullup",
+        "Runtimes",
+        "consts",
         "datasheet",
         "egui",
         "espnow",
@@ -78,11 +82,7 @@
         "itertools",
         "ledc",
         "leds",
-        "Magnemite",
-        "Neopixel",
         "platformio",
-        "Pullup",
-        "Runtimes",
         "timeit",
         "tschundler",
         "vsync",
@@ -156,5 +156,11 @@
     "workbench.preferredDarkColorTheme": "Andromeda",
     "workbench.preferredLightColorTheme": "Default Light+",
     "window.autoDetectColorScheme": true,
+<<<<<<< HEAD
     "cmake.showOptionsMovedNotification": false,
 }
+||||||| parent of dcce0ade6 (fix words)
+}
+=======
+}
+>>>>>>> dcce0ade6 (fix words)

@@ -156,11 +156,5 @@
     "workbench.preferredDarkColorTheme": "Andromeda",
     "workbench.preferredLightColorTheme": "Default Light+",
     "window.autoDetectColorScheme": true,
-<<<<<<< HEAD
     "cmake.showOptionsMovedNotification": false,
 }
-||||||| parent of dcce0ade6 (fix words)
-}
-=======
-}
->>>>>>> dcce0ade6 (fix words)

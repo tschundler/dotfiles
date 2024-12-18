@@ -30,3 +30,5 @@
 [safe]
 	directory = /storage/software/src/OctoPrint
 
+[init]
+	defaultBranch = main

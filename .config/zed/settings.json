@@ -7,6 +7,16 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "assistant": {
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-4o"
+    },
+    "version": "2"
+  },
+  "tab_bar": {
+    "show": false
+  },
   "ui_font_size": 14,
   "buffer_font_size": 12,
   "soft_wrap": "editor_width",
@@ -15,5 +25,14 @@
     "light": "One Light",
     "dark": "One Dark"
   },
-  "autosave": "on_focus_change"
+  "autosave": "on_focus_change",
+  "lsp": {
+    "typos": {
+      "initialization_options": {
+        // Diagnostic severity within Zed. "Error" by default, can be:
+        // "Error", "Hint", "Information", "Warning"
+        "diagnosticSeverity": "Hint"
+      }
+    }
+  }
 }

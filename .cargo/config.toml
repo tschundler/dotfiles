@@ -17,4 +17,3 @@ opt-level = 3
 # in ".cargo/config.toml" "-C", "inline-threshold=150", or even larger
 lto = true
 
-codegen-units = 1

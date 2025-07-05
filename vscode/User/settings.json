@@ -166,4 +166,5 @@
     "window.autoDetectColorScheme": true,
     "cmake.showOptionsMovedNotification": false,
     "hg.path": "/usr/local/bin/hg",
+    "terminal.integrated.scrollback": 5000,
 }

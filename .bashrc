@@ -137,7 +137,7 @@ fi
 
 # espup
 if [ -f "$HOME/export-esp.sh" ]; then
-  .  "$HOME/export-esp.sh" 
+  .  "$HOME/export-esp.sh"
 fi
 
 ################# Ted's stuff
@@ -239,6 +239,10 @@ if [ -f "${HOME}/.nvm" ]; then
   [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 fi
 
+if [ -x ${HOME}/.cargo/bin/starship ]; then
+  eval "$(starship init bash)"
+fi
+
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 CHOME=${HOME}/anaconda3
@@ -281,4 +285,3 @@ esac
 #### End Content
 
 #### EOF
-

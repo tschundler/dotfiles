@@ -1,6 +1,6 @@
 {
-    "editor.fontFamily": "Hack, Menlo, monospace",
-    "editor.fontSize": 9,
+    "editor.fontFamily": "'Hack Nerd Font', 'Source Code Pro', Hack, Menlo, monospace",
+    "editor.fontSize": 10,
     "editor.rulers": [80,120],
     "editor.minimap.enabled": false,
     "editor.renderWhitespace": "boundary",
@@ -167,4 +167,5 @@
     "cmake.showOptionsMovedNotification": false,
     "hg.path": "/usr/local/bin/hg",
     "terminal.integrated.scrollback": 5000,
+    "platformio-ide.useBuiltinPIOCore": true,
 }

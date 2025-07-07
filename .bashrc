@@ -229,10 +229,6 @@ if [ -f ${HOME}/.config/broot/launcher/bash/br ]; then
 	source ${HOME}/.config/broot/launcher/bash/br
 fi
 
-if [ ! -z $(which zoxide) ]; then
-  eval "$(zoxide init bash)"
-fi
-
 if [ -f "${HOME}/.nvm" ]; then
   export NVM_DIR="$HOME/.nvm"
   [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -241,6 +237,10 @@ fi
 
 if [ -x ${HOME}/.cargo/bin/starship ]; then
   eval "$(starship init bash)"
+fi
+
+if [ ! -z $(which zoxide) ]; then
+  eval "$(zoxide init bash)"
 fi
 
 # >>> conda initialize >>>

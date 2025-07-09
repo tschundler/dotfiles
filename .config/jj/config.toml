@@ -3,3 +3,35 @@
 [user]
 name = "Ted Schundler"
 email = "tschundler@gmail.com"
+
+[aliases]
+# from https://willhbr.net/2024/05/26/some-hot-jj-tips/
+
+# If I want to just push directly to main
+# This just sets it to be the second-latest commit
+setmain = ["bookmark", "set", "main", "-r", "@-"]
+setmaster = ["bookmark", "set", "master", "-r", "@-"]
+# Sync everything, mentioned above
+sync = ['git', 'fetch', '--all-remotes']
+# Put stuff back on top of main
+evomain = ['rebase', '--skip-emptied', '-d', 'main@origin']
+evomaster = ['rebase', '--skip-emptied', '-d', 'master@origin']
+
+# Do a full log, rather than just the interesting stuff
+# Basically the same behaviour as the default git log
+xl = ['log', '-r', 'all()']
+# Progression log? Shows how the current change has evolved
+# A bit more on this later
+pl = ['obslog', '-p']
+
+[ui]
+diff-formatter = "delta" 
+#diff-formatter = "/home/ted/ti.sh"
+#paginate = "never"
+
+[merge-tools.delta]
+diff-expected-exit-codes = [0, 1]
+
+[git]
+write-change-id-header = true
+#diff-args = ["--side-by-side", "$left", "$right"]

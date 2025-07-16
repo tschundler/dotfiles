@@ -229,10 +229,16 @@ if [ -f ${HOME}/.config/broot/launcher/bash/br ]; then
 	source ${HOME}/.config/broot/launcher/bash/br
 fi
 
-if [ -f "${HOME}/.nvm" ]; then
+if [ -x "${HOME}/.nvm" ]; then
   export NVM_DIR="$HOME/.nvm"
   [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
   [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+fi
+
+
+if [ -x "${HOME}/.deno" ]; then
+  . "${HOME}/.deno/env"
+  source ${HOME}/.local/share/bash-completion/completions/deno.bash
 fi
 
 if [ -x ${HOME}/.cargo/bin/starship ]; then

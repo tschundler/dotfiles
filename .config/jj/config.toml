@@ -4,6 +4,10 @@
 name = "Ted Schundler"
 email = "tschundler@gmail.com"
 
+[revset-aliases]
+'closest_bookmark(to)' = 'heads(::to & bookmarks())'
+'closest_pushable(to)' = 'heads(::to & ~description(exact:"") & (~empty() | merges()))'
+
 [aliases]
 # from https://willhbr.net/2024/05/26/some-hot-jj-tips/
 
@@ -15,6 +19,9 @@ setmaster = ["bookmark", "set", "master", "-r", "@-"]
 sync = ['git', 'fetch', '--all-remotes']
 # Put stuff back on top of main
 evolve = ['rebase', '--skip-emptied', '-d', 'trunk()']
+# https://github.com/jj-vcs/jj/discussions/5568
+tug = ["bookmark", "move", "--from", "closest_bookmark(@)", "--to", "closest_pushable(@)"]
+
 
 # Do a full log, rather than just the interesting stuff
 # Basically the same behaviour as the default git log

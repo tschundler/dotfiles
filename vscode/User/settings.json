@@ -168,4 +168,5 @@
     "hg.path": "/usr/local/bin/hg",
     "terminal.integrated.scrollback": 5000,
     "platformio-ide.useBuiltinPIOCore": true,
+    "git.enabled": false,
 }

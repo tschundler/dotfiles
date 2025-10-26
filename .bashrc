@@ -245,6 +245,13 @@ if [ -x ${HOME}/.cargo/bin/starship ]; then
   eval "$(starship init bash)"
 fi
 
+if [ -x ${HOME}/.atuin ]; then
+  . "$HOME/.atuin/bin/env"
+
+  [[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh
+  eval "$(atuin init bash)"
+fi
+
 if [ ! -z $(which zoxide) ]; then
   eval "$(zoxide init bash)"
 fi
@@ -291,3 +298,4 @@ esac
 #### End Content
 
 #### EOF
+

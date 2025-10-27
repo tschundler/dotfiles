@@ -7,12 +7,35 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
-  "assistant": {
+  "ssh_connections": [
+    {
+      "host": "ted-hackintosh.local",
+      "args": [],
+      "projects": [
+        {
+          "paths": [
+            "/Users/ted/rust/embedded/esp32-multiled"
+          ]
+        },
+        {
+          "paths": [
+            "/Users/ted/rust/embedded/esp32-multiled.bk"
+          ]
+        },
+        {
+          "paths": [
+            "/Users/ted/rust/embedded/esp32-multiled3"
+          ]
+        }
+      ]
+    }
+  ],
+  "icon_theme": "Zed (Default)",
+  "agent": {
     "default_model": {
-      "provider": "copilot_chat",
-      "model": "gpt-4o"
+      "provider": "google",
+      "model": "gemini-2.5-flash"
     },
-    "version": "2"
   },
   "tab_bar": {
     "show": false

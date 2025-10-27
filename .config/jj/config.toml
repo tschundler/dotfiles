@@ -14,8 +14,7 @@ setmaster = ["bookmark", "set", "master", "-r", "@-"]
 # Sync everything, mentioned above
 sync = ['git', 'fetch', '--all-remotes']
 # Put stuff back on top of main
-evomain = ['rebase', '--skip-emptied', '-d', 'main@origin']
-evomaster = ['rebase', '--skip-emptied', '-d', 'master@origin']
+evolve = ['rebase', '--skip-emptied', '-d', 'trunk()']
 
 # Do a full log, rather than just the interesting stuff
 # Basically the same behaviour as the default git log

@@ -100,7 +100,7 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 # some more ls aliases
-alias ll='ls -alF'
+alias ll='ls -AlhF'
 alias la='ls -A'
 alias l='ls -CF'
 
@@ -141,6 +141,10 @@ if [ -f "$HOME/export-esp.sh" ]; then
 fi
 
 ################# Ted's stuff
+
+if which -s eza; then
+  alias ll='eza -Alh --git'
+fi
 
 if [ -x /snap/bin ]; then
   export PATH=/snap/bin:${PATH}
@@ -220,7 +224,8 @@ fi
 
 if [ -x /usr/bin/ksshaskpass ]; then
 	export SSH_ASKPASS=/usr/bin/ksshaskpass
-	if [ -z "${SSH_AUTH_SOCK}" -a -n "${XDG_RUNTIME_DIR}" ]; then
+	if [ -S "${XDG_RUNTIME_DIR}/ssh-agent.socket" ]; then
+	#if [ -z "${SSH_AUTH_SOCK}" -a -n "${XDG_RUNTIME_DIR}" ]; then
 		export SSH_AUTH_SOCK="${XDG_RUNTIME_DIR}/ssh-agent.socket"
 	fi
 fi

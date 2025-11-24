@@ -169,4 +169,12 @@
     "terminal.integrated.scrollback": 5000,
     "platformio-ide.useBuiltinPIOCore": true,
     "git.enabled": false,
+    "chat.agent.thinkingStyle": "collapsedPreview",
+    "python.pyrefly.displayTypeErrors": "force-on",
+    "python.languageServer": "Default",
+    "markdownlint.config": {
+        "MD007": false,
+        "MD034": false,
+        "MD004": false
+    },
 }

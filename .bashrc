@@ -245,7 +245,7 @@ if [ -x ${HOME}/.cargo/bin/starship ]; then
   eval "$(starship init bash)"
 fi
 
-if [ -x ${HOME}/.atuin/bin ]; then
+if [ -x "${HOME}/.atuin/bin" ]; then
   . "$HOME/.atuin/bin/env"
 
   [[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh

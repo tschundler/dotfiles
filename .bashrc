@@ -246,7 +246,7 @@ if [ -x "${HOME}/.deno" ]; then
   source ${HOME}/.local/share/bash-completion/completions/deno.bash
 fi
 
-if [ -x ${HOME}/.cargo/bin/starship ]; then
+if [ -x ${HOME}/.cargo/bin/starship -o -x /usr/bin/starship ]; then
   eval "$(starship init bash)"
 fi
 

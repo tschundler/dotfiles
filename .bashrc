@@ -142,8 +142,14 @@ fi
 
 ################# Ted's stuff
 
-if which -s eza; then
+if command -v eza >/dev/null 2>&1
+then
   alias ll='eza -Alh --git'
+fi
+
+if command -v dysk >/dev/null 2>&1
+then
+  alias df='dysk'
 fi
 
 if [ -x /snap/bin ]; then
